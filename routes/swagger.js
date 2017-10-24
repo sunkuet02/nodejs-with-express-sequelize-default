@@ -23,6 +23,6 @@ router.get('/api', function(req, res) {
     res.send(spec);
 });
 
-router.use('/docs', swaggerUi.serve, swaggerUi.setup(spec));
+router.use('/api-docs', swaggerUi.serve, swaggerUi.setup(spec));
 
 module.exports = router;
